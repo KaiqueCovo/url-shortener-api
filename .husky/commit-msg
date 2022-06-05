@@ -10,7 +10,7 @@ printf "
 ${RED}================================================\n
 ${RED}What do you think use the ${GREEN}yarn commit${RED}?\n
 ${RED}================================================
-\n\n\n
+\n\n\n${NC}
 "
 
 yarn commitlint --edit $1
