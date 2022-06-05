@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  database:
+    container_name: url-shortener-database
+    image: postgres
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: url-shortener
+    volumes:
+      - ./.volumes/postgresql:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
