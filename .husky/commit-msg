@@ -1,4 +1,16 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+printf "
+\n\n\n
+${RED}================================================\n
+${RED}What do you think use the ${GREEN}yarn commit${RED}?\n
+${RED}================================================
+\n\n\n
+"
+
 yarn commitlint --edit $1
